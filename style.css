@@ -1,0 +1,112 @@
+
+@font-face {
+  font-family: 'Xilosa';
+  src: local("./assets/xilosa.ttf") format('truetype');
+  /* Outros formatos de fonte se necessário */
+}
+
+/*GENÉRICO*/
+*{
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+body{
+  background-color: #eebb0240;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1, h2, p, tr, td{
+  color: #285238;
+  font-family: "Xilosa";
+  font-weight: normal;
+}
+
+hr{
+  height: 4px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  background-color: #285238;
+  margin-bottom: 10px;
+}
+
+/*SEÇÃO PRINCIPAL*/
+.secao_principal{
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  column-gap: 50px;
+  padding: 5%;
+}
+
+/*COLUNA ESQUERDA*/
+h2#menu_titulo{
+  font-size: 32px;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.coluna_esquerda{
+  background-color: #A7CAB1;
+  border-radius: 15px;
+  box-shadow: 9px 15px 30px -9px rgba(0,0,0,0.69);
+-webkit-box-shadow: 9px 15px 30px -9px rgba(0,0,0,0.69);
+-moz-box-shadow: 9px 15px 30px -9px rgba(0,0,0,0.69);
+  width: 20em;
+  height: 25em;
+  padding: 4% 7% 7% 7%;
+}
+
+.tabela_itens td, tr{
+  font-size: 20px;
+  width: 85%;
+  padding: 0 0 7% 0;
+}
+
+.tabela_subitem{
+  font-size: 15px;
+}
+
+
+/*COLUNA DIREITA*/
+.coluna_direita{
+  position: relative
+}
+
+.banner{
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  text-align: center;
+}
+h1#nome_bistro{
+  font-weight: 700;
+  font-size: 60px;
+}
+
+h2#cardapio_especial{
+  font-size: 40px;
+}
+
+.footer_info{
+  position: absolute;
+  top: 80%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 25%;
+}
+
+.footer_icone{
+  width: 30px;
+  height: 30px;
+}
+
+.footer_text{
+  font-size: 20px;
+}
+
